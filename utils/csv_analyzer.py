@@ -5,6 +5,7 @@ class CsvAnalyzer:
     def __init__(self, file_path):
         self.file_path = file_path
         self.data = pd.read_csv(file_path)
+        self.is_usable = self.message()
 
     def message(self, message):
         return message
