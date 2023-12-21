@@ -6,6 +6,9 @@ class CsvAnalyzer:
         self.file_path = file_path
         self.data = pd.read_csv(file_path)
 
+    def message(self, message):
+        return message
+
     def summary(self):
         summarization = {
 
