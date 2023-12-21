@@ -2,10 +2,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 class CsvAnalyzer:
+    
     def __init__(self, file_path):
         self.file_path = file_path
         self.data = pd.read_csv(file_path)
-        self.is_usable = self.message()
+        self.is_accessible = self.is_usable()
+
+    def is_usable(self):
+        pass
 
     def message(self, message):
         return message
