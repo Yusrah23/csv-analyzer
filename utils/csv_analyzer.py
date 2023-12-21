@@ -11,6 +11,9 @@ class CsvAnalyzer:
     def is_usable(self):
         pass
 
+    def message(self, message):
+        return message
+
     def summary(self):
         summarization = {
 
